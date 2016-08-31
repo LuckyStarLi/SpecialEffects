@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>音乐播放器</title>
+		<link rel="stylesheet" type="text/css" href="css/Musicplay.css" />
+		<script src="js/MusicPlay.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="box">
+			<img class="Simg" src="img/musicPlay/audio-song.jpg" />
+			<div class="div1">
+				<button class="button">开始播放</button>
+				<button class="button">下一首</button>
+				<br/>
+				<input id="input" type="range" min="0" max="1000" value="0" onchange="change1()" />
+			</div>
+			<audio id="audio" src=""></audio>
+		</div>
+	</body>
+
+</html>

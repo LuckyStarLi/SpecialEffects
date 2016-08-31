@@ -1,0 +1,121 @@
+/*----设置全局页面原样式------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*----------头部样式-----------*/
+
+.header {
+	width: 100%;
+	height: 90px;
+}
+
+
+/*-------按钮组样式--------*/
+
+.box1 {
+	width: 100%;
+	height: 40px;
+	background: #003;
+}
+
+.box1 .title {
+	margin: 0px auto;
+	line-height: 40px;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+}
+
+.box2 {
+	width: 100%;
+	height: 50px;
+	background-color: rgba(204, 204, 204, 0.2);
+	position: relative;
+	/*设为定位参照 */
+}
+
+.box2 .btn {
+	/*参照物为box2*/
+	position: absolute;
+	color: #666;
+	font-weight: 700;
+	font-size: 12px;
+	width: 70px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+}
+
+.logo {
+	position: absolute;
+	left: 20px;
+	top: 10px;
+	height: 30px;
+}
+
+.box2 .btn1 {
+	left: 190px;
+}
+
+.box2 .btn2 {
+	left: 290px;
+}
+
+.box2 .btn3 {
+	right: 40px;
+	text-align: right;
+}
+
+.box2 .btn3-1 {
+	right: 5px;
+	background: url(../img/magic/icon03.jpg) no-repeat 10px center;
+	display: none;
+}
+
+.box2 .btn4 {
+	right: 110px;
+	top: 1px;
+	background: url(../img/magic/icon01.jpg) no-repeat center center;
+	display: none;
+}
+
+.box2 .serch {
+	position: absolute;
+	font-size: 16px;
+	width: 300px;
+	height: 30px;
+	border: 1px solid black;
+	background: url(../img/magic/icon01.jpg) no-repeat 270px center;
+	right: 200px;
+	top: 9px;
+}
+
+.box2 .btn5 {
+	right: 60px;
+	top: 0px;
+	background: url(../img/magic/icon02.jpg) no-repeat center center;
+	display: block;
+}
+
+
+/*-------动态布局------当页面宽度介于760-1300 将在线咨询隐藏-------------*/
+
+@media only screen and (max-width: 800px) {
+	.box2 .btn2,
+	.box2 .btn1,
+	.box2 .btn3,
+	.box2 .serch {
+		display: none;
+	}
+	.box2 .btn3-1,
+	.box2 .btn4 {
+		display: block;
+	}
+	.box2 .btn5 {
+		display: block;
+	}
+}

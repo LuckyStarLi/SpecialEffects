@@ -1,0 +1,17 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#gamediv{
+	width: 330px;
+	height: 330px;
+	margin: 50px auto;
+	align-content: center;
+}
+#source{
+	width: 120px;
+	height: 30px;
+	margin: 20px 0px;
+	align-content: center;
+}
